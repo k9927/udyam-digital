@@ -2,7 +2,7 @@
 
 A mobile-friendly website and WhatsApp journey that takes a small business from one sentence to a booked installation, in its own language.
 
-**Team NATPAT · TIET, Patiala** · Airtel SYNC 2026, Digital Track (Enterprise Track A case)
+**Team NATPAT · TIET, Patiala** · Airtel SYNC 2026, Digital Track
 Karandeep Singh Bhasin (102353008) · Armaan Gogoi (102303623)
 
 All data is synthetic, from the case pack.

@@ -39,7 +39,7 @@ export function documentSvg(type, fields = {}) {
 <text x="70" y="145" font-size="22" fill="#6b6d67">${esc(layout.issuer)}</text>
 <line x1="70" y1="170" x2="1170" y2="170" stroke="#e2e1db" stroke-width="2"/>
 ${body}
-<text x="70" y="${height - 70}" font-size="18" fill="#a9aba4">Synthetic specimen · Accel YTL Hackathon test data · fictional business and person</text>
+<text x="70" y="${height - 70}" font-size="18" fill="#a9aba4">Synthetic specimen · hackathon test data · fictional business and person</text>
 </svg>`;
 }
 
@@ -56,7 +56,7 @@ ${[0, 1, 2, 3].map(i => `<circle cx="${480 + i * 40}" cy="230" r="9" fill="${i <
 <text x="110" y="380" font-size="30" font-weight="700" fill="#1f201d">Installed at ${esc(business)}</text>
 ${lines}
 <text x="110" y="${470 + kit.slice(0, 4).length * 34}" font-size="26" font-weight="700" fill="#2f7d55">Speed test: ${esc(speedMbps)} Mbps</text>
-<text x="110" y="720" font-size="18" fill="#a9aba4">Synthetic installation photo · Accel YTL Hackathon test data</text>
+<text x="110" y="720" font-size="18" fill="#a9aba4">Synthetic installation photo · hackathon test data</text>
 </svg>`;
 }
 
