@@ -9,7 +9,7 @@ All data is synthetic, from the case pack.
 
 **Demo video (2:58):** https://drive.google.com/file/d/13WppXm7yMD3_mCJVri63TfkmmWwT8q-6/view
 
-**Submission documents:** [supporting PDF](docs/NATPAT_TIET-Patiala_supporting.pdf) (links, architecture, privacy note) · [architecture diagram](docs/architecture.png) · [privacy and security note](docs/privacy_note.pdf)
+**Submission documents:** [7-slide business case](docs/NATPAT_TIET-Patiala.pdf) ([PPTX](docs/NATPAT_TIET-Patiala.pptx)) · [supporting PDF](docs/NATPAT_TIET-Patiala_supporting.pdf) (links, architecture, privacy note) · [architecture diagram](docs/architecture.png) · [privacy and security note](docs/privacy_note.pdf)
 
 **Stack:** MongoDB · Express 5 · React 19 (Vite + Tailwind) · Node 24, with documents in Cloudflare R2 (S3-compatible) and a Claude-powered advisor.
 
