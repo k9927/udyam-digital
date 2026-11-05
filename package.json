@@ -1,0 +1,17 @@
+{
+  "name": "udyam-digital",
+  "private": true,
+  "description": "Udyam Digital: discover, buy and activate a business telecom bundle in one sitting (MERN + Cloudflare R2)",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:api": "npm run dev --prefix backend",
+    "dev:web": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "start": "npm run build && npm start --prefix backend",
+    "seed": "npm run seed --prefix backend",
+    "reset": "npm run seed --prefix backend -- --reset",
+    "create-admin": "npm run create-admin --prefix backend",
+    "test": "npm test --prefix backend",
+    "lint": "npm run lint --prefix frontend"
+  }
+}

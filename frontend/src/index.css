@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-paper text-ink font-sans antialiased; font-feature-settings: 'tnum' 0; }
+  h1, h2, h3 { @apply font-display font-semibold tracking-tight text-ink; }
+  /* A grid column must not grow to fit a wide child (a scrolling row of dates, a long word). */
+  .grid > * { min-width: 0; }
+  :focus-visible { @apply outline-none ring-2 ring-brand-300 ring-offset-2 ring-offset-paper; }
+}
+
+@layer components {
+  .card { @apply rounded-lg border border-line bg-white; }
+  .label { @apply mb-1.5 block text-sm font-medium text-ink-soft; }
+  .input { @apply w-full rounded-md border border-[#cfcfca] bg-white px-3 py-2.5 text-[15px] text-ink placeholder:text-ink-faint focus:border-ink focus:outline-none focus:ring-1 focus:ring-ink disabled:bg-paper; }
+  /* Section labels: quiet sentence case, not shouty caps. */
+  .eyebrow { @apply text-sm font-medium text-ink-muted; }
+  .chip { @apply inline-flex items-center rounded-md border border-[#cfcfca] bg-white px-3 py-1.5 text-sm font-medium text-ink-soft transition hover:border-ink hover:text-ink; }
+  .table { @apply w-full min-w-[640px] border-collapse text-left text-sm; }
+  .table th { @apply border-b border-line px-3 py-2.5 text-[13px] font-medium text-ink-muted; }
+  .table td { @apply border-b border-line px-3 py-3 align-top; }
+  .table tbody tr:hover td { @apply bg-paper/60; }
+  .num { font-variant-numeric: tabular-nums; }
+  /* Edge shadows appear only while there is more table to scroll to. */
+  .scroll-x { overflow-x: auto; background: linear-gradient(90deg, #fff 30%, rgba(255,255,255,0)) left / 40px 100% no-repeat local, linear-gradient(270deg, #fff 30%, rgba(255,255,255,0)) right / 40px 100% no-repeat local, radial-gradient(farthest-side at 0 50%, rgba(20,20,22,.14), transparent) left / 12px 100% no-repeat scroll, radial-gradient(farthest-side at 100% 50%, rgba(20,20,22,.14), transparent) right / 12px 100% no-repeat scroll, #fff; }
+  /* The tab bar fades out at the right edge when it scrolls. */
+  .fade-x { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); }
+  @media (min-width: 768px) { .fade-x { -webkit-mask-image: none; mask-image: none; } }
+  .divide-section > * + * { @apply border-t border-line; }
+}
+
+@keyframes rise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise .2s ease-out both; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }

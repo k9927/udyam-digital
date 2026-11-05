@@ -1,0 +1,14 @@
+# Dependencies and builds
+node_modules/
+frontend/dist/
+frontend/public/ocr/
+
+# Secrets and local data: never commit
+.env
+.env.*
+!.env.example
+backend/uploads/
+backend/.mongo-data/
+*.log
+.DS_Store
+Thumbs.db
